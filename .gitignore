@@ -10,3 +10,5 @@
 
 # Mantém o próprio .gitignore
 !.gitignore
+
+!bootstrap

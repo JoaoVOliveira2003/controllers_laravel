@@ -12,11 +12,11 @@ class SingleActionController extends Controller
     public function __invoke(Request $request)
     {
         echo 'publico';
-        echo $this->metodoPrivado(3);
+        echo $this->limpar($this->metodoPrivado(3));
         echo 'publico';
     }
 
     private function metodoPrivado($num){
-        echo '|o numero privado é ' . $num . '|';
+        return ' |o O numero privado é ' . $num . '|  ';
     }
 }
